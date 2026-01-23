@@ -217,12 +217,12 @@ python -c "from modelscope import AutoModelForCausalLM; print('ModelScope instal
 
 | Model Name | Parameters | Availability | Notes |
 |------------|------------|---------------|-------|
-| **MentalSeek-Dx-7B** | 7B | 🔒 Coming Soon | Model weights will be made publicly available upon paper acceptance |
+| **MentalSeek-Dx-7B** | 7B | [https://huggingface.co/SAMLL5AAAAA/MentalSeek-Dx-7B](https://huggingface.co/SAMLL5AAAAA/MentalSeek-Dx-7B) | The MentalSeek-Dx-7B is already visible! |
 | **MentalSeek-Dx-14B** | 14B | 🔒 Coming Soon | Model weights will be made publicly available upon paper acceptance |
 
 ### Benchmark Data
 
-The MentalDx Bench dataset is included in this repository:
+The MentalDx Bench dataset is included in [https://huggingface.co/datasets/SAMLL5AAAAA/MentalDx-Bench](https://huggingface.co/datasets/SAMLL5AAAAA/MentalDx-Bench):
 
 - **Input File**: `MentalDx-Bench/MentalDx-Bench.jsonl`
 - **Ground Truth Labels**: `MentalDx-Bench/Ground_Truth.jsonl`
