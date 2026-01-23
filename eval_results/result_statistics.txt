@@ -1,0 +1,159 @@
+====================================================================================================
+Statistics: Matching accuracy between jsonl files in result-extracted folder and gt file
+====================================================================================================
+
+GT file: ./MentalSeek-Dx/MentalDx-Bench/gt.jsonl
+GT file record count: 712
+Number of statistics files: 2
+
+====================================================================================================
+Overall Statistics (disorder_code matching accuracy):
+====================================================================================================
+
+Filename                                           Common ID    Matches      Accuracy    
+----------------------------------------------------------------------------------------------------
+MentalSeek-Dx-14B.jsonl                            712          499          70.08%        
+MentalSeek-Dx-7B.jsonl                             712          481          67.56%        
+
+====================================================================================================
+Overall Statistics (diagnostic_category matching accuracy):
+====================================================================================================
+
+Filename                                           Common ID    Matches      Accuracy    
+----------------------------------------------------------------------------------------------------
+MentalSeek-Dx-14B.jsonl                            712          598          83.99%        
+MentalSeek-Dx-7B.jsonl                             712          588          82.58%        
+
+====================================================================================================
+Overall Statistics (both disorder_code and diagnostic_category matching accuracy):
+====================================================================================================
+
+Filename                                           Common ID    Matches      Accuracy    
+----------------------------------------------------------------------------------------------------
+MentalSeek-Dx-14B.jsonl                            712          494          69.38%        
+MentalSeek-Dx-7B.jsonl                             712          478          67.13%        
+
+====================================================================================================
+diagnostic_category Summary Table (Rows: filenames, Columns: category abbreviations):
+====================================================================================================
+
+Filename                                          Anxiety             Catatonia           Substance           Bodily              Stress              Disruptive          Dissociative        Elimination         Eating              Pregnancy           Mood                Neurocognitive      Neurodevelopmental  OCD                 Personality         Schizophrenia       
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+MentalSeek-Dx-14B.jsonl                           84.72               90.00               48.24               20.00               52.50               88.89               82.98               100.00              97.14               91.30               57.73               66.67               89.19               85.00               53.85               67.19               
+MentalSeek-Dx-7B.jsonl                            81.94               70.00               48.24               25.00               52.50               88.89               72.34               100.00              97.14               86.96               54.64               66.67               94.59               90.00               61.54               56.25               
+
+Note: Values in the table represent disorder_code matching accuracy for each file in each category (numeric value, percentage sign removed)
+      N/A indicates that the file has no data in this category
+
+Category Name Abbreviation Reference (in table column order):
+  1. Anxiety: Anxiety or fear-related disorders
+  2. Catatonia: Catatonia
+  3. Substance: Disorders due to substance use or addictive behaviours
+  4. Bodily: Disorders of bodily distress or bodily experience
+  5. Stress: Disorders specifically associated with stress
+  6. Disruptive: Disruptive behaviour or dissocial disorders
+  7. Dissociative: Dissociative disorders
+  8. Elimination: Elimination disorders
+  9. Eating: Feeding or eating disorders
+  10. Pregnancy: Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium
+  11. Mood: Mood disorders
+  12. Neurocognitive: Neurocognitive disorders
+  13. Neurodevelopmental: Neurodevelopmental disorders
+  14. OCD: Obsessive-compulsive or related disorders
+  15. Personality: Personality disorders and related traits
+  16. Schizophrenia: Schizophrenia or other primary psychotic disorders
+
+
+====================================================================================================
+Detailed Statistics (including diagnostic accuracy for each category):
+====================================================================================================
+
+
+File: MentalSeek-Dx-14B.jsonl
+----------------------------------------------------------------------------------------------------
+Overall Statistics:
+  Result file record count: 712
+  Common ID count: 712
+  GT file record count: 712
+  disorder_code match: 499 / 712 = 70.08%
+  diagnostic_category match: 598 / 712 = 83.99%
+  Both match (disorder_code+diagnostic_category): 494 / 712 = 69.38%
+
+Accuracy by diagnostic_category:
+Category                                                     GT Total   Matches    Accuracy  
+----------------------------------------------------------------------------------------------------
+Elimination disorders                                        4          4          100.00%      
+Feeding or eating disorders                                  35         34         97.14%      
+Mental or behavioural disorders associated with pregnancy,.. 23         21         91.30%      
+Catatonia                                                    30         27         90.00%      
+Neurodevelopmental disorders                                 37         33         89.19%      
+Disruptive behaviour or dissocial disorders                  18         16         88.89%      
+Obsessive-compulsive or related disorders                    40         34         85.00%      
+Anxiety or fear-related disorders                            72         61         84.72%      
+Dissociative disorders                                       47         39         82.98%      
+Schizophrenia or other primary psychotic disorders           64         43         67.19%      
+Neurocognitive disorders                                     87         58         66.67%      
+Mood disorders                                               97         56         57.73%      
+Personality disorders and related traits                     13         7          53.85%      
+Disorders specifically associated with stress                40         21         52.50%      
+Disorders due to substance use or addictive behaviours       85         41         48.24%      
+Disorders of bodily distress or bodily experience            20         4          20.00%      
+
+
+File: MentalSeek-Dx-7B.jsonl
+----------------------------------------------------------------------------------------------------
+Overall Statistics:
+  Result file record count: 712
+  Common ID count: 712
+  GT file record count: 712
+  disorder_code match: 481 / 712 = 67.56%
+  diagnostic_category match: 588 / 712 = 82.58%
+  Both match (disorder_code+diagnostic_category): 478 / 712 = 67.13%
+
+Accuracy by diagnostic_category:
+Category                                                     GT Total   Matches    Accuracy  
+----------------------------------------------------------------------------------------------------
+Elimination disorders                                        4          4          100.00%      
+Feeding or eating disorders                                  35         34         97.14%      
+Neurodevelopmental disorders                                 37         35         94.59%      
+Obsessive-compulsive or related disorders                    40         36         90.00%      
+Disruptive behaviour or dissocial disorders                  18         16         88.89%      
+Mental or behavioural disorders associated with pregnancy,.. 23         20         86.96%      
+Anxiety or fear-related disorders                            72         59         81.94%      
+Dissociative disorders                                       47         34         72.34%      
+Catatonia                                                    30         21         70.00%      
+Neurocognitive disorders                                     87         58         66.67%      
+Personality disorders and related traits                     13         8          61.54%      
+Schizophrenia or other primary psychotic disorders           64         36         56.25%      
+Mood disorders                                               97         53         54.64%      
+Disorders specifically associated with stress                40         21         52.50%      
+Disorders due to substance use or addictive behaviours       85         41         48.24%      
+Disorders of bodily distress or bodily experience            20         5          25.00%      
+
+====================================================================================================
+Summary Statistics (average accuracy across all files):
+====================================================================================================
+
+Average disorder_code matching accuracy: 68.82%
+Average diagnostic_category matching accuracy: 83.29%
+Average both match (disorder_code+diagnostic_category) accuracy: 68.26%
+
+Average accuracy by diagnostic_category (across all files):
+Category                                                     File Count Total Samples Avg Accuracy
+----------------------------------------------------------------------------------------------------
+Elimination disorders                                        2          8            100.00%        
+Feeding or eating disorders                                  2          70           97.14%        
+Neurodevelopmental disorders                                 2          74           91.89%        
+Mental or behavioural disorders associated with pregnancy,.. 2          46           89.13%        
+Disruptive behaviour or dissocial disorders                  2          36           88.89%        
+Obsessive-compulsive or related disorders                    2          80           87.50%        
+Anxiety or fear-related disorders                            2          144          83.33%        
+Catatonia                                                    2          60           80.00%        
+Dissociative disorders                                       2          94           77.66%        
+Neurocognitive disorders                                     2          174          66.67%        
+Schizophrenia or other primary psychotic disorders           2          128          61.72%        
+Personality disorders and related traits                     2          26           57.69%        
+Mood disorders                                               2          194          56.19%        
+Disorders specifically associated with stress                2          80           52.50%        
+Disorders due to substance use or addictive behaviours       2          170          48.24%        
+Disorders of bodily distress or bodily experience            2          40           22.50%        
