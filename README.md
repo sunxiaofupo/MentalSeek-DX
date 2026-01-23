@@ -372,7 +372,7 @@ print(response)
 You can also use the provided main script:
 
 ```bash
-python run_MentalSeek-Dx.py --model_path path/to/MentalSeek-Dx-7B --input_file path/to/input.jsonl
+python run_MentalSeek-Dx.py --model_path path/to/MentalSeek-Dx-7B --input_file path/to/MentalDx-Bench.jsonl
 ```
 
 ---
@@ -437,7 +437,7 @@ The evaluation script computes:
 
 - **Category-Level Accuracy**: Accuracy at the diagnostic category level (16 categories)
 - **Disorder-Level Accuracy**: Accuracy at the specific disorder level (76 disorders)
-- **ICD-11 Code Precision**: Precision of ICD-11 code prediction (4-digit precision)
+- **Jiont Accuracy**:  Accuracy at both the diagnostic category and the specific disorder level
 
 ### Viewing Results
 
