@@ -487,6 +487,7 @@ This project is licensed under the MIT License.
 - We thank the board-certified psychiatrists who annotated the MentalDx Bench dataset
 - We acknowledge the VERL framework team for providing the reinforcement learning infrastructure
 - We appreciate the open-source community for their valuable tools and libraries
+- The experimental and computational work in this research run on the Huawei Cloud AI Compute Service. We appreciate the stable compute supply from this platform.
 
 ---
 
